@@ -1,0 +1,49 @@
+<!Doctype HTML>
+<HTML>
+    <Head>
+        <title>One Hand Bandit</title>
+
+        <meta name="author" content="FlashLAB Studio">
+        <meta charset="UTF-8">
+        
+        <link href="https://fonts.googleapis.com/css?family=Lilita+One&display=swap" rel="stylesheet">
+        
+        <link rel="icon" href="Pictures/icon.png">
+        <link rel="stylesheet" type="text/css" href="style.css"/>
+        <script type="text/javascript" src="saveJS.js"></script>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    </Head>
+    <body>
+        <header>
+            <img id="baner" src="Pictures/Casino_baner_9.jpg">
+        </header>
+        <main>
+            <div id="LeftContainer">
+                <img src="Pictures/Tokens.jpg">
+            </div>
+            <div id="CenterContainer">
+                <div class="RandomPicture"><img src="Pictures_To_Draw/Pytajnik.jpg"></div>
+                <div class="RandomPicture"><img src="Pictures_To_Draw/Pytajnik.jpg"></div>
+                <div class="RandomPicture"><img src="Pictures_To_Draw/Pytajnik.jpg"></div>
+                <div class="RandomPicture"><img src="Pictures_To_Draw/Pytajnik.jpg"></div>
+                <button id="SpinButton" type="button" onclick="spin();">SPIN (-20 pkt)</button>
+
+                <!-- <p class="points">200</p> -->
+            </div>
+            <div id="RightContainer">
+                <img src="Pictures/Tokens.jpg">
+            </div>
+        </main>
+        <div id="pointsTable">
+            <p id="points">All points: 200</p>
+            <!-- <p id="sum">Sum: 0</p> -->
+            <p id="newPoints">New points: 0</p>
+        </div>
+        <footer>
+            <div class="author">
+                FlashLAB Studio &copy;<br>
+                Piotr Morawiec
+            </div>
+        </footer>
+    </body>
+</HTML>
