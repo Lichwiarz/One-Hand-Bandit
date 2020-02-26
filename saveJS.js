@@ -26,7 +26,7 @@ function darwPicture(){
         var d = randomNumber();
         document.getElementById('CenterContainer').innerHTML += '<div class="RandomPicture">'+images[d]+'</div>';
         
-        document.getElementById('CenterContainer').innerHTML += '<button id="SpinButton" type="button" onclick="spin()">SPIN (-20 pkt)</button>';
+        document.getElementById('CenterContainer').innerHTML += '<button id="SpinButton" type="button" onclick="spin()">SPIN (-20)</button>';
     }
 
     let sum=0;
@@ -46,8 +46,13 @@ function darwPicture(){
     points = points-20;
     points = points+newPoints;
     document.getElementById("points").innerHTML = 'All points: '+points;
-    //document.getElementById("sum").innerHTML = 'Sum: '+sum;
-    document.getElementById("newPoints").innerHTML = 'New points: '+newPoints;
+    document.getElementById("sum").innerHTML = 'Sum: '+sum;
+    document.getElementById("newPoints").innerHTML = 'New points: +'+newPoints;
+
+    document.getElementById("a").innerHTML = 'A: '+a;
+    document.getElementById("b").innerHTML = 'B: '+b;
+    document.getElementById("c").innerHTML = 'C: '+c;
+    document.getElementById("d").innerHTML = 'D: '+d;
 }
 function randomNumber(){
     var x = Math.random()*8;
